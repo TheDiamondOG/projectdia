@@ -73,14 +73,13 @@ body {
 .crap_bar {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     background-color: darkblue;
     font-family: Arial;
     border-radius: 5px;
     padding: 10px;
 }
 
-/* Navigation and Icon Adjustments */
 .crap_bar a {
     font-size: 16px;
     color: white;
@@ -152,7 +151,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 .website-icon {
@@ -163,7 +163,6 @@ body {
     object-fit: cover;
     margin-right: 15px;
 }
-
 
 /* Mobile View */
 @media (max-width: 768px) {
