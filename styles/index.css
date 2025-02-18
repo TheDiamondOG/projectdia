@@ -146,11 +146,19 @@ body {
 }
 
 .crap_bar_centering {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     align-content: center;
     align-self: center;
     text-align: center;
     justify-content: center;
+}
+
+.website-icon {
+    border-radius: 50%;
+    border: 5px solid black;
+    object-fit: cover;
 }
 
 /* Mobile View */
