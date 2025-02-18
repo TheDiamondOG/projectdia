@@ -208,18 +208,18 @@ body {
     }
 
     .crap_bar a {
-        font-size: 12px;
+        font-size: 15px;
         padding: 12px 18px;
     }
 
     /* Social Drop Down */
     .dropdown .dropbtn {
-        font-size: 12px;
-        padding: 10px 12px;
+        font-size: 15px;
+        padding: 12px 15px;
     }
     
     .dropdown-content a {
-        padding: 10px 12px;
+        padding: 12px 15px;
     }
 }
  
