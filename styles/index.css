@@ -154,7 +154,9 @@ body::before {
         font-size: 15px;
         padding: 12px 15px;
     }
-    
+    .dropdown-content {
+        min-width: 0px;
+    }
     .dropdown-content a {
         font-size: 10px;
         padding: 12px 15px;
