@@ -145,6 +145,14 @@ body {
     justify-content: center;
 }
 
+.crap_bar_centering {
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+}
+
 /* Mobile View */
 @media (max-width: 768px) {
     /* Title Page */
