@@ -20,7 +20,7 @@
 }
 
 .project_item {
-    background-color: darkblue;
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     margin-left: 10px;
     text-decoration: none;
@@ -32,7 +32,7 @@
 }
 
 .project_item:hover {
-    background-color: blue;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .project_title {
