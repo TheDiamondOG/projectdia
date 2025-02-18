@@ -156,6 +156,7 @@ body::before {
     }
     
     .dropdown-content a {
+        font-size: 10px;
         padding: 12px 15px;
     }
 }
