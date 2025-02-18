@@ -13,29 +13,9 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://projectdia.net/blog</loc>
-  <lastmod>2025-01-16T22:20:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://projectdia.net/projects</loc>
   <lastmod>2025-01-16T22:20:50+00:00</lastmod>
   <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://projectdia.net/blog/2024-12-10_15-31-36_Website%20Update%20(Projects%20and%20Security)</loc>
-  <lastmod>2025-01-16T22:20:50+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://projectdia.net/blog/2024-12-02_16-25-28_Data%20URL%20Blocksi%20Exploit</loc>
-  <lastmod>2025-01-16T22:20:50+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://projectdia.net/blog/2024-12-02_04-07-22_I%20am%20going%20insain</loc>
-  <lastmod>2025-01-16T22:20:50+00:00</lastmod>
-  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://projectdia.net/projects/nyts/wordle_today</loc>
