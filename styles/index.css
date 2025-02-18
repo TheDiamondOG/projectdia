@@ -12,10 +12,13 @@
 }
 
 body {
-    background: url('/images/NewDia_exteended_NoSecret.png') no-repeat center center fixed;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/NewDia_exteended_NoSecret.png') no-repeat center center fixed;
     background-size: cover;
-    position: relative;
+    background-attachment: fixed;
 }
+
 
 body::before {
     content: "";
@@ -34,7 +37,7 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: darkblue;
+    background-color: rgba(0, 0, 0, 0.25);
     font-family: Arial;
     border-radius: 5px;
     padding: 10px;
