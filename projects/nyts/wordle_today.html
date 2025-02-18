@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Today's New York Times Wordle answers">
+    <title>Project Dia</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/wordle.css">
+    <script>
+        async function fetchWordle() {
+            const today = new Date();
+            const year = today.getFullYear();
+            const month = String(today.getMonth() + 1).padStart(2, '0');
+            const day = String(today.getDate()).padStart(2, '0');
+
+            const url = `https://corsproxy.io/?url=https://www.nytimes.com/svc/wordle/v2/${year}-${month}-${day}.json`;
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error("Failed to fetch Wordle");
+                
+                const data = await response.json();
+                const word = data.solution.toUpperCase();
+                displayWordle(word);
+            } catch (error) {
+                console.error("Error fetching Wordle:", error);
+                document.querySelector(".letter_container").innerHTML = "<p>Failed to load Wordle.</p>";
+            }
+        }
+
+        function displayWordle(word) {
+            const container = document.querySelector(".letter_container");
+            container.innerHTML = "";
+            
+            for (const letter of word) {
+                const box = document.createElement("div");
+                box.className = "letter_box";
+                
+                const span = document.createElement("span");
+                span.className = "letter_text";
+                span.textContent = letter;
+                
+                box.appendChild(span);
+                container.appendChild(box);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", fetchWordle);
+    </script>
+</head>
+<body>
+    <div class="crap_bar">
+        <a href="/">Home</a>
+        <a href="projects.html">Projects</a>
+        <div class="dropdown">
+            <button class="dropbtn">Socials/Info
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="https://guns.lol/thediamondog" target="_blank">Guns.lol Page</a>
+                <a href="https://github.com/thediamondog" target="_blank">GitHub Page</a>
+                <a href="https://youtube.com/@thediamondog_yt" target="_blank">YouTube Page</a>
+            </div>
+        </div>
+    </div>
+    <h1 class="title">Today's Wordle</h1>
+    <div class="letter_container">
+        <p>Loading...</p>
+    </div>
+</body>
+</html>

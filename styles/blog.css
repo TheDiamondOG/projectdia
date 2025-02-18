@@ -1,0 +1,123 @@
+/* Blog post content styling */
+.blog-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2e3d63;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.blog-content h1, .blog-content h2, .blog-content h3 {
+    color: white;
+    font-family: sans-serif;
+}
+
+.blog-content p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.blog-content a {
+    color: #4ab0e6;
+    text-decoration: none;
+}
+
+.blog-content a:hover {
+    text-decoration: underline;
+}
+
+.blog-content ul, .blog-content ol {
+    margin: 20px;
+    padding-left: 20px;
+}
+
+.blog-content blockquote {
+    background-color: #333;
+    padding: 15px;
+    border-left: 5px solid #FFDD57;
+    font-style: italic;
+    color: #ddd;
+}
+
+.blog-content pre {
+    background-color: #1e3b70;
+    padding: 10px;
+    border-radius: 8px;
+    color: #f0f0f0;
+    white-space: pre-wrap;
+}
+
+.blog-content code {
+    background-color: #1e3b70;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: #FFDD57;
+}
+
+
+/* Style for the blog list container */
+.scroll_time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Style for the blog list */
+.blog-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-item {
+    background-color: darkblue;
+    border-radius: 8px;
+    margin-bottom: -6px;
+    width: 750px;
+    font-family: sans-serif;
+}
+
+.blog-link {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.blog-link:hover {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
+
+.blog-item + .blog-item {
+    margin-top: 15px;
+}
+
+.scroll_time {
+    padding: 20px;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    /* Blog post content styling */
+    .blog-item {
+        width: 300px;
+    }
+}

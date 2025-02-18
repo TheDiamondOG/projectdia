@@ -1,0 +1,57 @@
+.github_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project_image {
+    margin-bottom: 10px;
+}
+
+.project_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.project_list_container {
+    justify-content: center;
+}
+
+.project_item {
+    background-color: darkblue;
+    border-radius: 5px;
+    margin-left: 10px;
+    text-decoration: none;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project_item:hover {
+    background-color: blue;
+}
+
+.project_title {
+    font-family: sans-serif;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .project_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .project_item {
+        margin-bottom: 10px;
+    }
+}
